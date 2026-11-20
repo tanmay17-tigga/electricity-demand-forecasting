@@ -1,0 +1,48 @@
+{
+  "best_model": "XGBoost: calendar + past demand",
+  "test_period": "2017-01-01 to 2018-08-03",
+  "test_hours": 13897,
+  "comparison": [
+    {
+      "model": "Baseline: same hour yesterday",
+      "MAE_MW": 2300.1,
+      "RMSE_MW": 3134.2,
+      "MAPE_%": 7.32
+    },
+    {
+      "model": "Baseline: same hour last week",
+      "MAE_MW": 3511.2,
+      "RMSE_MW": 4794.0,
+      "MAPE_%": 10.99
+    },
+    {
+      "model": "XGBoost: calendar only",
+      "MAE_MW": 3126.7,
+      "RMSE_MW": 3957.6,
+      "MAPE_%": 10.16
+    },
+    {
+      "model": "XGBoost: calendar + past demand",
+      "MAE_MW": 1895.6,
+      "RMSE_MW": 2525.2,
+      "MAPE_%": 6.03
+    }
+  ],
+  "error_reduction_vs_yesterday_baseline_%": 17.6,
+  "best_iteration": 202,
+  "features": [
+    "hour",
+    "dayofweek",
+    "is_weekend",
+    "is_holiday",
+    "month",
+    "quarter",
+    "dayofyear",
+    "weekofyear",
+    "lag_24h",
+    "lag_48h",
+    "lag_168h",
+    "rolling_mean_24h",
+    "rolling_mean_168h"
+  ]
+}

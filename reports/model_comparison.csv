@@ -1,0 +1,5 @@
+model,MAE_MW,RMSE_MW,MAPE_%
+Baseline: same hour yesterday,2300.1,3134.2,7.32
+Baseline: same hour last week,3511.2,4794.0,10.99
+XGBoost: calendar only,3126.7,3957.6,10.16
+XGBoost: calendar + past demand,1895.6,2525.2,6.03

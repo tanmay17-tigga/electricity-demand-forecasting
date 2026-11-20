@@ -1,0 +1,14 @@
+,importance
+lag_24h,0.6182
+lag_168h,0.1821
+lag_48h,0.05
+dayofweek,0.0414
+is_weekend,0.0362
+hour,0.0194
+is_holiday,0.0129
+rolling_mean_24h,0.0103
+dayofyear,0.0082
+weekofyear,0.0068
+rolling_mean_168h,0.0057
+month,0.0052
+quarter,0.0036
