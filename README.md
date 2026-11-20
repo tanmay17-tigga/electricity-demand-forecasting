@@ -1,5 +1,8 @@
 # Electricity Demand Forecasting
 
+## **live app link**
+https://electricity-demand-forecasting-ywafntajdkpiuvpwb44vrb.streamlit.app/
+
 A machine learning project that forecasts **hourly electricity demand one day ahead** for the
 PJM East region (USA). It compares two simple baselines with two XGBoost models and shows the
 results in an interactive Streamlit dashboard.
